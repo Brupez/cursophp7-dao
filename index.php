@@ -34,15 +34,17 @@ $aluno->insert();
 
 echo $aluno;*/
 
-//
+/*alterar info de utilizadores
 $usuario = new Usuario();
-
 $usuario->loadById(8);
-
 $usuario->update("professor", "issotudo");
 
-echo $usuario;
+echo $usuario;*/
 
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->delete();
 
+echo json_encode($usuario);
 
 ?>
